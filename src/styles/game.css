@@ -1,0 +1,174 @@
+
+.number {
+    width: 20px;
+    height: 20px;
+    font-size: 12px;
+    margin: 1px;
+}
+/*
+.number.marcado {
+    background-color: #4caf50;
+    color: #fff;
+}*/
+
+.carton {
+    border: 2px solid #000;
+    border-radius: 8px;
+    padding: 5px;
+    margin: 5px;
+    display: inline-block;
+    background-color: #fff;
+}
+
+.carton h4 {
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+.carton .fila {
+    display: flex;
+    justify-content: space-between;
+}
+
+.carton .number {
+    width: 20px;
+    height: 20px;
+    font-size: 12px;
+    margin: 1px;
+    border: 1px solid #000;
+    border-radius: 3px;
+    text-align: center;
+    line-height: 20px;
+    background-color: #f0f0f0;
+}
+
+.carton .number.marcado {
+    background-color: #0000ff;
+    color: #fff;
+}
+
+.carton .empty-cell {
+    background-color: #fff; 
+}
+.carton .columna {
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* */
+.game-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.player-section,
+.cpu-section {
+    width: 45%; 
+    box-sizing: border-box;
+    margin-right: 10px; 
+}
+
+.bombo-section {
+    width: 35%; 
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.number-display {
+    margin-top: 20px;
+    font-size: 36px;
+    font-weight: bold;
+    padding: 10px;
+    border: 3px solid #333;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    color: #333;
+    letter-spacing: 3px;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
+}
+
+.back-btn {
+    margin-top: 10px;
+    font-size: 16px;
+    padding: 8px 16px;
+    background-color: #f44336;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.back-btn:hover {
+    background-color: #d32f2f;
+}
+
+.right-section {
+    width: 45%; 
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.marked-list-container {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between; 
+    flex-wrap: wrap;
+}
+
+.marked-list-column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 20px; 
+}
+
+.marked-list-item {
+    margin: 5px 0;
+    font-size: 14px;
+    font-weight: bold;
+    color: #333;
+}
+
+
+.marked-list-item {
+    margin: 5px 0;
+    font-size: 14px;
+    font-weight: bold;
+    width: 20px;
+    color: #333;
+}
+
+.number-list-item-marcado {
+    background-color: #0000ff;
+    color: #fff;
+}
+
+/* Estilos para el modal */
+.modal-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo oscuro semi-transparente */
+}
+
+.modal {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.back-to-menu-btn {
+    margin-top: 10px;
+}

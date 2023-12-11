@@ -1,0 +1,31 @@
+.main-heading {
+    color: #333;
+}
+
+.main-paragraph {
+    color: #666;
+}
+
+.main-select {
+    padding: 10px;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.main-btn {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+.back-btn {
+    background-color: #ff4500;
+}
+
