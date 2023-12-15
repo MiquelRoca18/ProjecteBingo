@@ -2,9 +2,7 @@
 export { showGameView, resetCarton, markNumberInCardCPU};
 import { createBombo, getDrumNumber, createMarkedList} from '../logic/game.js';
 import {navigateTo} from '../routers/router.js';
-/*
-const bombo = createBombo();
-const markedList = createMarkedList();*/
+
 let bombo = createBombo();
 let markedList = createMarkedList();
 
@@ -221,25 +219,6 @@ function createCartonElement(titulo, isPlayerCarton, cartones) {
 
     return cartonElement;
 }
-
-/*
-function toggleMarkedNumber(numberElement, cartones) {
-    numberElement.classList.toggle('marcado');
-
-    // Verificar si todos los números en el cartón del jugador están marcados
-    const playerCarton = numberElement.closest('.player-section .carton');
-    if (areAllNumbersMarked(playerCarton)) {
-        // Realizar la comprobación de los números del cartón del jugador
-        checkCartonNumbers(playerCarton, cartones);
-    }
-
-    // Verificar si todos los números en el cartón de la CPU están marcados
-    const cpuCarton = numberElement.closest('.cpu-section .carton');
-    if (cpuCarton && areAllNumbersMarked(cpuCarton)) {
-        // Realizar la comprobación de los números del cartón de la CPU
-        checkCartonNumbers(cpuCarton, cartones);
-    }
-}*/
 function toggleMarkedNumber(numberElement, cartones) {
     numberElement.classList.toggle('marcado');
 
@@ -278,17 +257,6 @@ function markNumberInCardCPU(number, cartones) {
         });
     }
 }
-/*
-function areAllNumbersMarked(cartones) {
-    if (!cartones || cartones.length === 0) {
-        return false; // Retorna false si no hay cartones presentes
-    }
-
-    const markedNumbers = Array.from(cartones, carton => Array.from(carton.querySelectorAll('.number.marcado')));
-    const flattenedNumbers = markedNumbers.flat();
-
-    return flattenedNumbers.length === cartones.length * 24; // Cambia esto según la cantidad total de números en un cartón
-}*/
 function areAllNumbersMarked(carton) {
     if (!carton) {
         return false; // Retorna false si no hay cartón presente
@@ -298,35 +266,6 @@ function areAllNumbersMarked(carton) {
     return markedNumbers.length === 24; // Cambia esto según la cantidad total de números en un cartón
 }
 
-
-/*function checkCartonNumbers(carton, cartones) {
-    // Obtener todos los números marcados en el cartón
-    const markedNumbers = Array.from(carton.querySelectorAll('.number.marcado'));
-
-    // Verificar si todos los números marcados han salido durante la partida
-    const allNumbersMatch = markedNumbers.every(numberElement => {
-        const number = parseInt(numberElement.textContent);
-        return markedList[number - 1];
-    });
-
-    if (allNumbersMatch) {
-        console.log(`¡Bingo! Todos los números del cartón han salido.`);
-
-        // Después de sacar un número, verifica si hay un ganador
-        checkWinner(cartones);
-    } else {
-        console.log(`Algunos números del cartón aún no han salido en el bombo.`);
-
-        // Desmarcar los números que no han salido en el cartón del jugador
-        markedNumbers.forEach(numberElement => {
-            const number = parseInt(numberElement.textContent);
-            if (!markedList[number - 1]) {
-                // Si el número no ha salido, desmarcarlo
-                toggleMarkedNumber(numberElement, cartones);
-            }
-        });
-    }
-}*/
 function checkCartonNumbers(carton, cartones) {
     console.log('Tipo de carton:', typeof carton);  // Agrega esta línea
 
