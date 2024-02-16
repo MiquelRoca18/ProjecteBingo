@@ -1,0 +1,14 @@
+#registroForm,
+#inicioSesionForm {
+    display: none;
+}
+
+#registroForm.formulario-activo,
+#inicioSesionForm.formulario-activo {
+    display: block;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    width: 200px;
+}
+

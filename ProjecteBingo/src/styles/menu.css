@@ -1,0 +1,60 @@
+
+  
+  nav {
+    background-color: #333; 
+    color: white; 
+    padding: 7px;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+  }
+  
+  nav a {
+    color: white;
+    text-decoration: none;
+    margin-right: 15px;
+    font-weight: bold;
+  }
+  
+  nav a:hover {
+    color: #ffc107; 
+    cursor: pointer;
+  }
+  
+  ul {
+    list-style-type: none;
+    margin-right: 10px;
+    padding: 0;
+    display: flex;
+  }
+  
+  ul li {
+    margin-right: 10px;
+  }
+  
+  form {
+    display: flex;
+    align-items: center;
+  }
+  
+  form input {
+    margin-right: 10px;
+    padding: 5px;
+  }
+  
+  form button {
+    padding: 7px;
+    background-color: #ffc107; 
+    color: #333; 
+    border: none;
+    cursor: pointer;
+  }
+  
+  form button:hover {
+    background-color: #333; 
+    color: white;
+  }
+  #profileNavItem {
+    margin-left: auto;
+    margin-right: 40px;
+  }
